@@ -5,13 +5,21 @@ public class Person {
 	private String LastName;
 	private String email;
 	private String type;
+	private String phoneNumber;
 	
-	
-	public Person(String firstName,String LastName,String email,String type) {
+	public Person(String firstName,String LastName,String email,String type,String phoneNumber) {
 		this.firstName=firstName;
 		this.LastName=LastName;
 		this.email=email;
 		this.type=type;
+		this.phoneNumber=phoneNumber;
+	}
+	public String getPhone() {
+		return phoneNumber;
+	}
+	
+	public void setPhone(String phoneNumber) {
+		this.phoneNumber=phoneNumber;
 	}
 	public String getLastName() {
 		return LastName;

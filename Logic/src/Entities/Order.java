@@ -8,17 +8,21 @@ public class Order {
 	private int orderNum;
 	private String timeInPark ; 
 	private String dateOfVisit;
-	private Park wantedPark;
+	private String wantedPark;
 	private float totalPrice;
+	private int numberOfVisitors;
 	
-	public Order(int orderNum,String timeInPark,String dateOfVisit,Park wantedPark,float totalPrice) {
+	public Order(int orderNum,String timeInPark,String dateOfVisit,String wantedPark,int numberOfVisitors,float totalPrice) {
 		this.orderNum=orderNum;
 		this.timeInPark=timeInPark;
 		this.dateOfVisit=dateOfVisit;
 		this.wantedPark=wantedPark;
 		this.totalPrice=totalPrice;
+		this.numberOfVisitors=numberOfVisitors;
 	}
-
+	public int getNumberOfVisitors() {
+		return numberOfVisitors;
+	}
 	public int getOrderNum() {
 		return orderNum;
 	}
@@ -43,11 +47,11 @@ public class Order {
 		this.dateOfVisit = dateOfVisit;
 	}
 
-	public Park getWantedPark() {
+	public String getWantedPark() {
 		return wantedPark;
 	}
 
-	public void setWantedPark(Park wantedPark) {
+	public void setWantedPark(String wantedPark) {
 		this.wantedPark = wantedPark;
 	}
 
