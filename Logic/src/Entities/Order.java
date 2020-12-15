@@ -2,20 +2,22 @@ package Entities;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Order {
 	
 	private int orderNum;
-	private String timeInPark ; 
-	private String dateOfVisit;
+	private LocalTime timeInPark ; 
+	private LocalDate dateOfVisit;
 	private String wantedPark;
 	private float totalPrice;
 	private int numberOfVisitors;
 	
-	public Order(int orderNum,String timeInPark,String dateOfVisit,String wantedPark,int numberOfVisitors,float totalPrice) {
+	public Order(int orderNum,LocalTime time,LocalDate dateOfVisit2,String wantedPark,int numberOfVisitors,float totalPrice) {
 		this.orderNum=orderNum;
-		this.timeInPark=timeInPark;
-		this.dateOfVisit=dateOfVisit;
+		this.timeInPark=time;
+		this.dateOfVisit=dateOfVisit2;
 		this.wantedPark=wantedPark;
 		this.totalPrice=totalPrice;
 		this.numberOfVisitors=numberOfVisitors;
@@ -31,19 +33,19 @@ public class Order {
 		this.orderNum = orderNum;
 	}
 
-	public String getTimeInPark() {
+	public LocalTime getTimeInPark() {
 		return timeInPark;
 	}
 
-	public void setTimeInPark(String timeInPark) {
+	public void setTimeInPark(LocalTime timeInPark) {
 		this.timeInPark = timeInPark;
 	}
 
-	public String getDateOfVisit() {
+	public LocalDate getDateOfVisit() {
 		return dateOfVisit;
 	}
 
-	public void setDateOfVisit(String dateOfVisit) {
+	public void setDateOfVisit(LocalDate dateOfVisit) {
 		this.dateOfVisit = dateOfVisit;
 	}
 
