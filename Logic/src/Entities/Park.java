@@ -2,12 +2,12 @@ package Entities;
 
 public class Park {
 
-	private String parkName;
-	private int maxVisitors;
-	private int maxAvailableVisitors;
-	private int currentVisitors;
-	private int maxDurationVisit;
-	private int AmountOfUnExpectedTravellers;
+	public static String parkName;
+	public static int maxVisitors;
+	public static int maxAvailableVisitors;
+	public static int currentVisitors;
+	public static int maxDurationVisit;
+	public static int AmountOfUnExpectedTravellers;
 	
 	public Park(String parkName,int maxVisitors,int maxAvailableVisitors,int currentVisitors,int maxDurationVisit,int AmountOfUnExpected) {
 		this.parkName=parkName;
